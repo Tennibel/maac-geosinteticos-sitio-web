@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos Geosintéticos | Geomembranas, Geotextiles, Geomallas — MAAC</title>
+<meta name="description" content="Catálogo de geosintéticos: geomembranas HDPE/LDPE/PVC, geotextiles tejidos y no tejidos, geoceldas, geomallas biaxiales/uniaxiales/triaxiales, geodrenes y gaviones. Fichas técnicas certificadas.">
+<meta name="keywords" content="geomembranas HDPE, geotextiles, geomallas, geoceldas, geodrenes, gaviones, geosintéticos, catálogo, ficha técnica, México, MAAC">
+<meta name="author" content="MAAC Materiales Geosintéticos">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://geosinteticosmaac.com.mx/productos">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://geosinteticosmaac.com.mx/productos">
+<meta property="og:title" content="Productos Geosintéticos | Geomembranas, Geotextiles, Geomallas — MAAC">
+<meta property="og:description" content="Catálogo completo de geosintéticos certificados: geomembranas, geotextiles, geoceldas, geomallas, geodrenes y gaviones. Solicita tu ficha técnica.">
+<meta property="og:image" content="https://geosinteticosmaac.com.mx/assets/img/og-image.jpg">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="MAAC Materiales Geosintéticos">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://geosinteticosmaac.com.mx/productos">
+<meta name="twitter:title" content="Productos Geosintéticos | Geomembranas, Geotextiles, Geomallas — MAAC">
+<meta name="twitter:description" content="Catálogo completo de geosintéticos certificados para infraestructura, construcción y minería en México.">
+<meta name="twitter:image" content="https://geosinteticosmaac.com.mx/assets/img/og-image.jpg">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/img/logo-dark.png">
+<link rel="apple-touch-icon" href="assets/img/logo-dark.png">
+<!-- Preconnects y fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Estilos específicos para la página de Productos */
+  .page-hero {
+    background: linear-gradient(135deg, var(--gris-carbon), var(--verde-profundo));
+    padding: 150px 0 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-hero::after {
+    content: ""; position: absolute; inset: 0; opacity: 0.08;
+    background-image: repeating-linear-gradient(45deg, var(--verde-maac) 0 2px, transparent 2px 20px);
+    pointer-events: none;
+  }
+  .page-hero h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.1;
+    color: var(--blanco);
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-hero p {
+    color: rgba(255,255,255,0.7);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .catalog-section {
+    padding: 150px 0;
+    background: var(--blanco);
+  }
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+  }
+  
+  /* Tarjetas del catálogo detallado (sin fotos) */
+  .catalog-card {
+    background: #f7f9f8;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0,0,0,0.06);
+    padding: 40px 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+  }
+  .catalog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(14,26,22,0.08);
+    border-color: var(--verde-maac-dark);
+  }
+  .catalog-card .prod-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(14,26,22,0.05);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .catalog-card .prod-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--verde-profundo);
+  }
+  .catalog-card h3 {
+    font-size: 24px;
+    color: var(--verde-profundo);
+    margin-bottom: 10px;
+    font-family: var(--font-display);
+  }
+  .catalog-card .prod-sub {
+    font-size: 13px;
+    color: var(--verde-maac-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+  }
+  .catalog-card p {
+    color: var(--gris-tecnico);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+  .catalog-card h4 {
+    font-size: 14px;
+    color: var(--verde-profundo);
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .catalog-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  .catalog-card ul li {
+    font-size: 14px;
+    color: var(--gris-tecnico);
+    padding: 6px 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .catalog-card ul li::before {
+    content: "▪";
+    color: var(--verde-maac-dark);
+    font-size: 16px;
+  }
+
+  /* Sección de beneficios */
+  .benefits-banner {
+    padding: 120px 0;
+    background: var(--verde-profundo);
+    color: var(--blanco);
+  }
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .benefit-item h4 {
+    font-size: 20px;
+    color: var(--verde-maac);
+    margin-bottom: 12px;
+  }
+  .benefit-item p {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .cta-section {
+    padding: 150px 0;
+    background: #f7f9f8;
+    text-align: center;
+  }
+  .cta-box {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .cta-box h2 {
+    color: var(--verde-profundo);
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .cta-box p {
+    color: var(--gris-tecnico);
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+    .benefits-grid { grid-template-columns: 1fr; gap: 30px; }
+  }
+  @media (max-width: 768px) {
+    .catalog-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOPBAR ============ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span>📍 Toluca (con Cobertura Nacional)</span>
+      <span>✉ contacto@geosinteticosmaac.com.mx</span>
+      <span>☎ Oficina: 722 272 2467 / Ventas: 55 4350 9983</span>
+    </div>
+    <div class="topbar-social">
+      <a href="#" target="_blank" rel="noopener">Facebook</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><img src="assets/img/logo-light.png" alt="MAAC Materiales Geosintéticos"></a>
+    <nav>
+      <ul class="main-nav" id="mainNav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="soluciones.html">Soluciones</a></li>
+        <li class="active"><a href="productos.html">Productos</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="header-phone">
+        <a href="tel:5543509983" style="display:flex; align-items:center; gap:8px;">
+          <span class="ic">☎</span>
+          <span><small style="display:block; font-size:11px; opacity:0.7; line-height:1.2;">Llámanos (9am - 4pm)</small><strong style="font-size:14px; font-weight:700;">55 4350 9983</strong></span>
+        </a>
+      </div>
+      <a href="contacto.html" class="btn btn-primary btn-sm">Solicitar Cotización</a>
+      <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO PRODUCTOS ============ -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Geosintéticos de alto rendimiento para cada proyecto</h1>
+    <p>Garantizamos el abasto y la calidad certificada de los materiales técnicos que darán solidez a tu obra civil y ambiental.</p>
+  </div>
+</section>
+
+<!-- ============ CATALOGO DETALLADO ============ -->
+<section class="catalog-section">
+  <div class="container">
+    <div class="catalog-grid">
+      
+      <!-- 1. GEOMEMBRANAS -->
+      <div class="catalog-card">
+        <div>
+          <div class="plan-img" style="background-image: url('assets/img/WhatsApp Image 2022-10-07 at 1.53.50 PM.jpeg'); background-size: cover; background-position: center; height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -40px -34px 24px -34px;"></div>
+          <div class="prod-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          </div>
+          <h3>Geomembranas</h3>
+          <div class="prod-sub">HDPE / LDPE / PVC</div>
+          <p>Barreras impermeables sintéticas diseñadas para contener líquidos y sólidos, previniendo infiltraciones en el subsuelo. Fabricadas con resinas de alta densidad para máxima resistencia química y durabilidad bajo rayos UV.</p>
+          <h4>Aplicaciones comunes:</h4>
+          <ul>
+            <li>Impermeabilización de ollas de agua y canales.</li>
+            <li>Lagunas de lixiviación e industria minera.</li>
+            <li>Rellenos sanitarios y celdas de confinamiento.</li>
+          </ul>
+        </div>
+        <a href="contacto.html" class="btn btn-dark btn-sm">Solicitar Ficha Técnica</a>
+      </div>
+
+      <!-- 2. GEOTEXTILES -->
+      <div class="catalog-card">
+        <div>
+          <div class="plan-img" style="background-image: url('assets/img/Abgrid_geogrid_geotextile_application-1-1.jpeg'); background-size: cover; background-position: center; height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -40px -34px 24px -34px;"></div>
+          <div class="prod-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 13h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V7H3v2z"/></svg>
+          </div>
+          <h3>Geotextiles</h3>
+          <div class="prod-sub">Tejidos y No Tejidos</div>
+          <p>Materiales fabricados con fibras de polipropileno (PP) o poliéster (PET) de alta tenacidad. Cumplen funciones hidráulicas y mecánicas esenciales como filtración, drenaje, separación de capas de suelo y protección mecánica.</p>
+          <h4>Aplicaciones comunes:</h4>
+          <ul>
+            <li>Protección contra punzonamiento en geomembranas.</li>
+            <li>Filtro en sistemas de drenaje francés o pluvial.</li>
+            <li>Separador de subrasantes en pavimentación.</li>
+          </ul>
+        </div>
+        <a href="contacto.html" class="btn btn-dark btn-sm">Solicitar Ficha Técnica</a>
+      </div>
+
+      <!-- 3. GEOCELDAS -->
+      <div class="catalog-card">
+        <div>
+          <div class="plan-img" style="background-image: url('assets/img/WhatsApp Image 2022-08-09 at 3.00.23 PM.jpeg'); background-size: cover; background-position: center; height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -40px -34px 24px -34px;"></div>
+          <div class="prod-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 10l-10-5 10 5 10-5-10 5z"/></svg>
+          </div>
+          <h3>Geoceldas</h3>
+          <div class="prod-sub">Estructuras de Confinamiento</div>
+          <p>Sistema tridimensional de polietileno de alta densidad (HDPE) con estructura de panal de abeja. Al rellenarse con tierra, grava o concreto, confina el suelo y distribuye las cargas, reduciendo deformaciones y previniendo la erosión.</p>
+          <h4>Aplicaciones comunes:</h4>
+          <ul>
+            <li>Estabilización de taludes con pendientes inclinadas.</li>
+            <li>Refuerzo de subrasante en caminos temporales o viales.</li>
+            <li>Canales con alta velocidad de flujo.</li>
+          </ul>
+        </div>
+        <a href="contacto.html" class="btn btn-dark btn-sm">Solicitar Ficha Técnica</a>
+      </div>
+
+      <!-- 4. GEOMALLAS -->
+      <div class="catalog-card">
+        <div>
+          <div class="plan-img" style="background-image: url('assets/img/biaxial-geogrid-scaled.webp'); background-size: cover; background-position: center; height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -40px -34px 24px -34px;"></div>
+          <div class="prod-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z"/></svg>
+          </div>
+          <h3>Geomallas</h3>
+          <div class="prod-sub">Biaxiales / Uniaxiales / Triaxiales</div>
+          <p>Estructuras poliméricas abiertas y bidimensionales diseñadas para el refuerzo mecánico de suelos. Se traban con los agregados para distribuir de forma óptima las cargas a lo largo de un área mayor, aumentando la capacidad de carga.</p>
+          <h4>Aplicaciones comunes:</h4>
+          <ul>
+            <li>Refuerzo de bases de carreteras y vías ferroviarias.</li>
+            <li>Muros de suelo mecánicamente estabilizado (tierra armada).</li>
+            <li>Ampliación de banquetas en taludes empinados.</li>
+          </ul>
+        </div>
+        <a href="contacto.html" class="btn btn-dark btn-sm">Solicitar Ficha Técnica</a>
+      </div>
+
+      <!-- 5. GEODRENES -->
+      <div class="catalog-card">
+        <div>
+          <div class="plan-img" style="background-image: url('assets/img/GE-DE-001.jpg'); background-size: cover; background-position: center; height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -40px -34px 24px -34px;"></div>
+          <div class="prod-icon">
+            <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+          </div>
+          <h3>Geodrenes</h3>
+          <div class="prod-sub">Drenaje Compuesto</div>
+          <p>Sistema compuesto por un geonúcleo drenante tridimensional de HDPE cubierto en una o ambas caras por un geotextil no tejido. Ofrece una alta capacidad de conducción de fluidos en su plano, reemplazando con ventajas técnicas a los gruesos filtros de grava.</p>
+          <h4>Aplicaciones comunes:</h4>
+          <ul>
+            <li>Drenaje en muros de contención and cimentaciones.</li>
+            <li>Control de agua en terraplenes de carreteras.</li>
+            <li>Sistemas de captación de lixiviados y biogás.</li>
+          </ul>
+        </div>
+        <a href="contacto.html" class="btn btn-dark btn-sm">Solicitar Ficha Técnica</a>
+      </div>
+
+      <!-- 6. GAVIONES Y MALLAS -->
+      <div class="catalog-card">
+        <div>
+          <div class="plan-img" style="background-image: url('assets/img/gavion-2.jpg'); background-size: cover; background-position: center; height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -40px -34px 24px -34px;"></div>
+          <div class="prod-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-2h2v2zm0-4H7v-2h2v2zm0-4H7V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/></svg>
+          </div>
+          <h3>Gaviones y Mallas</h3>
+          <div class="prod-sub">Mallas de Acero y Gaviones</div>
+          <p>Cajas y colchones de malla de alambre de acero galvanizado de doble torsión, rellenos con piedras. Poseen alta flexibilidad, permeabilidad y durabilidad estructural, integrándose perfectamente al entorno.</p>
+          <h4>Aplicaciones comunes:</h4>
+          <ul>
+            <li>Muros de contención por gravedad en cortes de cerro.</li>
+            <li>Protección contra erosión en márgenes de ríos y canales.</li>
+            <li>Colchones de amortiguamiento en caídas de agua.</li>
+          </ul>
+        </div>
+        <a href="contacto.html" class="btn btn-dark btn-sm">Solicitar Ficha Técnica</a>
+      </div>
+
+      <!-- 7. GEOMANTAS -->
+      <div class="catalog-card">
+        <div>
+          <div class="plan-img" style="background-image: url('assets/img/WhatsApp Image 2022-08-09 at 3.19.03 PM (5).jpeg'); background-size: cover; background-position: center; height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -40px -34px 24px -34px;"></div>
+          <div class="prod-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm0 5.5l5 4.5h-2v6h-2v-6h-2v6H9v-6H7l5-4.5z"/></svg>
+          </div>
+          <h3>Geomantas</h3>
+          <div class="prod-sub">Control de Erosión</div>
+          <p>Mantas tridimensionales compuestas de filamentos sintéticos entrelazados o fibras orgánicas (como coco o yute). Su estructura retiene las partículas del suelo fértil en pendientes y fomenta el crecimiento rápido de vegetación.</p>
+          <h4>Aplicaciones comunes:</h4>
+          <ul>
+            <li>Protección contra deslaves en taludes carreteros expuestos.</li>
+            <li>Restauración ambiental de laderas erosionadas.</li>
+            <li>Recubrimiento de riberas con vegetación permanente.</li>
+          </ul>
+        </div>
+        <a href="contacto.html" class="btn btn-dark btn-sm">Solicitar Ficha Técnica</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFICIOS BANNER ============ -->
+<section class="benefits-banner">
+  <div class="container">
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <h4>Certificación ISO e Internacional</h4>
+        <p>Todos nuestros productos geosintéticos son fabricados bajo rigurosos estándares de calidad técnica, cumpliendo especificaciones ASTM y normas internacionales.</p>
+      </div>
+      <div class="benefit-item">
+        <h4>Soporte Técnico en Diseño</h4>
+        <p>Te apoyamos en la selección óptima del tipo de geomalla o geotextil requerido según las propiedades mecánicas y de flujo de tu obra.</p>
+      </div>
+      <div class="benefit-item">
+        <h4>Stock para Entrega Inmediata</h4>
+        <p>Contamos con almacenes permanentes en Toluca para asegurar la distribución rápida de pedidos a cualquier lugar de la República Mexicana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA SECCIÓN ============ -->
+<section class="cta-section">
+  <div class="container cta-box">
+    <h2>¿Necesitas asesoría técnica?</h2>
+    <p>Nuestros ingenieros especialistas te ayudarán a definir cuál es el material geosintético que mejor se adapta a los requerimientos técnicos y estructurales de tu obra.</p>
+    <a href="contacto.html" class="btn btn-primary">Contactar a un Ingeniero Especialista</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="logo"><img src="assets/img/logo-light.png" alt="MAAC" style="height:110px;margin-bottom:16px;"></a>
+      <p>MAAC es una empresa mexicana con 10 años de experiencia especializada en el desarrollo, suministro e instalación de materiales geosintéticos de alto desempeño para infraestructura y minería en México.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico">
+        <button>→</button>
+      </div>
+    </div>
+    <div>
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Soluciones</h4>
+      <ul>
+        <li><a href="productos.html">Geomembranas</a></li>
+        <li><a href="productos.html">Geotextiles</a></li>
+        <li><a href="productos.html">Geomallas</a></li>
+        <li><a href="soluciones.html">Asesoría técnica</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul class="footer-contact">
+        <li>📍 Toluca (con Cobertura Nacional)</li>
+        <li>✉ contacto@geosinteticosmaac.com.mx</li>
+        <li>☎ 722 272 2467 / 55 4350 9983</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 MAAC Materiales Geosintéticos. Todos los derechos reservados.</span>
+    <div class="footer-social">
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+<a href="https://wa.me/525541806306?text=Hola,%20me%20gustaría%20solicitar%20asesoría%20sobre%20geosintéticos." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
+  <svg viewBox="0 0 448 512">
+    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+  </svg>
+ </a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

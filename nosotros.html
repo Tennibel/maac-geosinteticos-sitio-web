@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros | Empresa Mexicana de Geosintéticos — MAAC</title>
+<meta name="description" content="MAAC es una empresa mexicana con más de 10 años de experiencia en geosintéticos. Conoce nuestra historia, misión, visión y valores en infraestructura y minería.">
+<meta name="keywords" content="empresa geosintéticos México, geosintéticos, MAAC, Toluca, infraestructura, minería, construcción">
+<meta name="author" content="MAAC Materiales Geosintéticos">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://geosinteticosmaac.com.mx/nosotros">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://geosinteticosmaac.com.mx/nosotros">
+<meta property="og:title" content="Nosotros | Empresa Mexicana de Geosintéticos — MAAC">
+<meta property="og:description" content="Conoce a MAAC: empresa mexicana especializada en materiales geosintéticos de alto desempeño para infraestructura, construcción y minería.">
+<meta property="og:image" content="https://geosinteticosmaac.com.mx/assets/img/og-image.jpg">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="MAAC Materiales Geosintéticos">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://geosinteticosmaac.com.mx/nosotros">
+<meta name="twitter:title" content="Nosotros | Empresa Mexicana de Geosintéticos — MAAC">
+<meta name="twitter:description" content="MAAC: más de 10 años fortaleciendo la infraestructura de México con geosintéticos certificados.">
+<meta name="twitter:image" content="https://geosinteticosmaac.com.mx/assets/img/og-image.jpg">
+<link rel="icon" type="image/png" href="assets/img/logo-dark.png">
+<link rel="apple-touch-icon" href="assets/img/logo-dark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Estilos específicos para la página de Nosotros */
+  .page-hero {
+    background: linear-gradient(135deg, var(--gris-carbon), var(--verde-profundo));
+    padding: 150px 0 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-hero::after {
+    content: ""; position: absolute; inset: 0; opacity: 0.08;
+    background-image: repeating-linear-gradient(45deg, var(--verde-maac) 0 2px, transparent 2px 20px);
+    pointer-events: none;
+  }
+  .page-hero h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.1;
+    color: var(--blanco);
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-hero p {
+    color: rgba(255,255,255,0.7);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-detail {
+    padding: 150px 0;
+    background: var(--blanco);
+  }
+  .about-detail-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .about-text h2 {
+    color: var(--verde-profundo);
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  .about-text p {
+    color: var(--gris-tecnico);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  /* Marcador estético para reemplazar la foto */
+  .media-placeholder {
+    height: 400px;
+    background: linear-gradient(135deg, #f0f3f1, #dbe3dd);
+    border-radius: var(--radius-lg);
+    border: 2px dashed rgba(14,26,22,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde-profundo);
+    text-align: center;
+    padding: 30px;
+  }
+  .media-placeholder svg {
+    width: 64px;
+    height: 64px;
+    fill: var(--verde-maac-dark);
+    margin-bottom: 20px;
+  }
+  
+  .mv-section {
+    padding: 150px 0;
+    background: #f7f9f8;
+  }
+  .mv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .mv-card {
+    background: var(--blanco);
+    border-radius: var(--radius-lg);
+    padding: 40px 30px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    transition: var(--transition);
+  }
+  .mv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  }
+  .mv-card .icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(171,211,42,0.15);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .mv-card .icon-box svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--verde-maac-dark);
+  }
+  .mv-card h3 {
+    font-size: 22px;
+    color: var(--verde-profundo);
+    margin-bottom: 16px;
+  }
+  .mv-card p {
+    color: var(--gris-tecnico);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .values-section {
+    padding: 150px 0;
+    background: var(--verde-profundo);
+    color: var(--blanco);
+    position: relative;
+  }
+  .values-section h2 {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .value-card {
+    background: var(--gris-carbon);
+    border-radius: var(--radius-lg);
+    padding: 34px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: var(--transition);
+  }
+  .value-card:hover {
+    border-color: var(--verde-maac);
+    transform: translateY(-5px);
+  }
+  .value-card h4 {
+    font-size: 20px;
+    color: var(--verde-maac);
+    margin-bottom: 14px;
+    font-family: var(--font-display);
+  }
+  .value-card p {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .coverage-section {
+    padding: 150px 0;
+    background: var(--blanco);
+  }
+  .coverage-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .coverage-text h2 {
+    color: var(--verde-profundo);
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .coverage-text p {
+    color: var(--gris-tecnico);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+  .coverage-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .cov-stat {
+    border-left: 4px solid var(--verde-maac);
+    padding-left: 20px;
+  }
+  .cov-stat strong {
+    display: block;
+    font-size: 32px;
+    color: var(--verde-profundo);
+    font-family: var(--font-display);
+  }
+  .cov-stat span {
+    font-size: 14px;
+    color: var(--gris-tecnico);
+  }
+
+  @media (max-width: 1024px) {
+    .about-detail-grid, .coverage-grid { grid-template-columns: 1fr; gap: 40px; }
+    .mv-grid { grid-template-columns: repeat(2, 1fr); }
+    .values-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .mv-grid, .values-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOPBAR ============ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span>📍 Toluca (con Cobertura Nacional)</span>
+      <span>✉ contacto@geosinteticosmaac.com.mx</span>
+      <span>☎ Oficina: 722 272 2467 / Ventas: 55 4350 9983</span>
+    </div>
+    <div class="topbar-social">
+      <a href="#" target="_blank" rel="noopener">Facebook</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><img src="assets/img/logo-light.png" alt="MAAC Materiales Geosintéticos"></a>
+    <nav>
+      <ul class="main-nav" id="mainNav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="soluciones.html">Soluciones</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li class="active"><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="header-phone">
+        <a href="tel:5543509983" style="display:flex; align-items:center; gap:8px;">
+          <span class="ic">☎</span>
+          <span><small style="display:block; font-size:11px; opacity:0.7; line-height:1.2;">Llámanos (9am - 4pm)</small><strong style="font-size:14px; font-weight:700;">55 4350 9983</strong></span>
+        </a>
+      </div>
+      <a href="contacto.html" class="btn btn-primary btn-sm">Solicitar Cotización</a>
+      <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO NOSOTROS ============ -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Fortalecemos el terreno para construir el futuro</h1>
+    <p>10 años entregando soluciones e ingeniería en materiales geosintéticos certificados para proyectos de gran escala.</p>
+  </div>
+</section>
+
+<!-- ============ TRAYECTORIA Y DETALLE ============ -->
+<section class="about-detail">
+  <div class="container about-detail-grid">
+    <div class="about-text">
+      <h2>Nuestra historia y compromiso</h2>
+      <p>MAAC es una empresa 100% mexicana con 10 años de experiencia especializada en el desarrollo, suministro e instalación de materiales geosintéticos de alto desempeño para infraestructura, construcción y minería en México.</p>
+      <p>Nos dedicamos a suministrar productos certificados de la más alta calidad internacional bajo estrictos controles técnicos. Nuestra trayectoria nos ha consolidado como un aliado estratégico para ingenieros y constructoras que buscan seguridad, durabilidad y optimización de costos en sus proyectos.</p>
+      <p>Gracias a nuestras alianzas comerciales con fabricantes globales y a un equipo de técnicos e ingenieros calificados, garantizamos un abasto inmediato y una ejecución impecable en campo.</p>
+    </div>
+    
+    <div class="media-photo" style="background-image: url('assets/img/Maac Geosinteticos13.jpg'); background-size: cover; background-position: center; height: 380px; border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 20px 40px rgba(0,0,0,0.15);"></div>
+  </div>
+</section>
+
+<!-- ============ MISIÓN, VISIÓN, PROPÓSITO ============ -->
+<section class="mv-section">
+  <div class="container mv-grid">
+    <div class="mv-card">
+      <div class="icon-box">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+      </div>
+      <h3>Nuestro Propósito</h3>
+      <p>Fortalecer desde la base. Desarrollamos soluciones geosintéticas que aportan estabilidad a los suelos, protegen el medio ambiente y garantizan la solidez de las obras civiles en todo el país.</p>
+    </div>
+    <div class="mv-card">
+      <div class="icon-box">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg>
+      </div>
+      <h3>Misión</h3>
+      <p>Suministrar e instalar geosintéticos certificados que superen los estándares normativos de nuestros clientes, brindando soporte técnico altamente calificado desde la fase de planeación hasta el soporte post-entrega.</p>
+    </div>
+    <div class="mv-card">
+      <div class="icon-box">
+        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </div>
+      <h3>Visión</h3>
+      <p>Consolidarnos como el proveedor de geosintéticos de referencia en México por nuestra calidad técnica, confiabilidad operativa y contribución al desarrollo de infraestructura sustentable a nivel nacional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALORES ============ -->
+<section class="values-section">
+  <div class="container">
+    <h2>Nuestros valores corporativos</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <h4>Especialistas</h4>
+        <p>No somos solo distribuidores; somos ingenieros y técnicos especializados que entienden a fondo las necesidades del suelo y la ingeniería de contención.</p>
+      </div>
+      <div class="value-card">
+        <h4>Confiabilidad</h4>
+        <p>Cumplimos con rigor en los tiempos de entrega y especificaciones técnicas de los materiales. Tu proyecto nunca se detiene por falta de suministro.</p>
+      </div>
+      <div class="value-card">
+        <h4>Rendimiento</h4>
+        <p>Proveemos materiales diseñados para soportar condiciones climáticas y químicas extremas, optimizando el desempeño a largo plazo de las obras.</p>
+      </div>
+      <div class="value-card">
+        <h4>Compromiso</h4>
+        <p>Nos involucramos activamente en garantizar soluciones eficientes y sustentables, cuidando tanto el presupuesto técnico como el entorno ecológico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTALACIONES Y COBERTURA ============ -->
+<section class="coverage-section">
+  <div class="container coverage-grid">
+    <div class="media-placeholder" style="background-image: url('assets/img/Maac Geosinteticos9.jpg'); background-size: cover; background-position: center; color:#fff; border-color: rgba(255,255,255,0.15); position: relative; overflow: hidden; z-index: 1;">
+      <div style="position: absolute; inset: 0; background: rgba(14,26,22,0.85); z-index: -1;"></div>
+      <svg viewBox="0 0 24 24" style="fill: var(--verde-maac); width: 54px; height: 54px; margin-bottom: 20px; z-index: 1;">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      </svg>
+      <h4 style="color:var(--verde-maac); z-index: 1; font-size: 20px; font-weight: 700;">Centro de Distribución Toluca</h4>
+      <p style="font-size:13px; color:rgba(255,255,255,0.7); max-width:280px; margin-top:5px; z-index: 1;">Cobertura logística con envíos y cuadrillas de instalación a todo el territorio nacional.</p>
+    </div>
+    
+    <div class="coverage-text">
+      <h2>Presencia logística nacional</h2>
+      <p>Con sede central de operaciones en Toluca, Estado de México, MAAC coordina el suministro y transporte rápido de materiales geosintéticos a cualquier punto de la República Mexicana.</p>
+      <p>Nuestras instalaciones albergan un stock permanente de geomembranas y geotextiles de especificación estándar para responder con agilidad a pedidos imprevistos o de gran volumen. Desde nuestras oficinas coordinamos también el despliegue de cuadrillas profesionales certificadas para instalaciones en cualquier rincón nacional.</p>
+      
+      <div class="coverage-stats">
+        <div class="cov-stat">
+          <strong>10</strong>
+          <span>Años de trayectoria</span>
+        </div>
+        <div class="cov-stat">
+          <strong>100%</strong>
+          <span>Cobertura nacional</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="logo"><img src="assets/img/logo-light.png" alt="MAAC" style="height:110px;margin-bottom:16px;"></a>
+      <p>MAAC es una empresa mexicana con 10 años de experiencia especializada en el desarrollo, suministro e instalación de materiales geosintéticos de alto desempeño para infraestructura y minería en México.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico">
+        <button>→</button>
+      </div>
+    </div>
+    <div>
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Soluciones</h4>
+      <ul>
+        <li><a href="productos.html">Geomembranas</a></li>
+        <li><a href="productos.html">Geotextiles</a></li>
+        <li><a href="productos.html">Geomallas</a></li>
+        <li><a href="soluciones.html">Asesoría técnica</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul class="footer-contact">
+        <li>📍 Toluca (con Cobertura Nacional)</li>
+        <li>✉ contacto@geosinteticosmaac.com.mx</li>
+        <li>☎ 722 272 2467 / 55 4350 9983</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 MAAC Materiales Geosintéticos. Todos los derechos reservados.</span>
+    <div class="footer-social">
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+<a href="https://wa.me/525541806306?text=Hola,%20me%20gustaría%20solicitar%20asesoría%20sobre%20geosintéticos." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
+  <svg viewBox="0 0 448 512">
+    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+  </svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
