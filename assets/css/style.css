@@ -175,8 +175,8 @@ header.site-header.scrolled{
   border-bottom:1px solid rgba(0,0,0,.05);
 }
 .nav-wrap{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
-.logo img{ height:95px; width:auto; transition:var(--transition); }
-header.site-header.scrolled .logo img{ height:60px; }
+.logo img{ height:44px; width:auto; transition:var(--transition); }
+header.site-header.scrolled .logo img{ height:36px; }
 .main-nav{ display:flex; gap:34px; }
 .main-nav > li{ position:relative; }
 .main-nav a{ color:var(--blanco); font-weight:600; font-size:15.5px; padding:8px 0; display:flex; align-items:center; gap:6px; transition:var(--transition); }
@@ -646,8 +646,9 @@ footer.site-footer{ background:var(--verde-profundo); color:rgba(255,255,255,.7)
   .stat-item:nth-child(2){ border-right:none; }
 }
 @media (max-width:780px){
-  .topbar,.main-nav,.header-phone small{ display:none; }
+  .topbar,.main-nav,.header-phone,.header-actions > .btn{ display:none; }
   .burger{ display:flex; }
+  .header-actions{ gap:0; }
   .process-grid::before{ display:none; }
   .process-grid,.services-grid,.plans-grid,.blog-grid,.stats-grid,.form-grid{ grid-template-columns:1fr; }
   .plan-card.featured{ transform:none; }
